@@ -1,0 +1,681 @@
+/*========================
+         COLORS
+==========================*/
+
+//intro and email sign up background
+$darkBlue: hsl(217, 28%, 15%);
+
+// main background
+$darkBlue2: hsl(218, 28%, 13%);
+
+//footer background
+$darkBlue3: hsl(216, 53%, 9%);
+
+//testimonials background
+
+$darkBlue4: hsl(219, 30%, 18%);
+
+//### ACCENT
+//inside call-to-action gradient
+$cyan: hsl(176, 68%, 64%);
+//inside call-to-action gradient
+$blue: hsl(198, 60%, 50%);
+
+//### Neutral
+$white: hsl(0, 0%, 100%);
+
+//## Typography
+
+// ### Body
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400px; //700 tez bedzie uzywane
+    margin: 0;
+    padding: 0;
+    background: $darkBlue;
+    color: $white;
+}
+
+// ### Headings, Call-to-actions, Header Navigation
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700px; //400 rowniez bedzie uzywane
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover {
+    color: red;
+}
+
+
+.container {
+    padding: 3rem 10%;
+}
+
+
+
+.inputEmail,
+.getStartedButton {
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    padding: 12px 74px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.inputEmail {
+
+    border: 0;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1500 - 320)));
+    outline: none;
+}
+
+.getStartedButton {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, $cyan), color-stop(1, $blue));
+    background: -moz-linear-gradient(top, $cyan 5%, $blue 100%);
+    background: -webkit-linear-gradient(top, $cyan 5%, $blue 100%);
+    background: -o-linear-gradient(top, $cyan 5%, $blue 100%);
+    background: -ms-linear-gradient(top, $cyan 5%, $blue 100%);
+    background: linear-gradient(to bottom, $cyan 5%, $blue 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$cyan, endColorstr=$blue, GradientType=0);
+    background-color: $cyan;
+    // border: 1px solid $cyan;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    // display: flex;
+    // justify-content: center;
+}
+
+.getStartedButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, $blue), color-stop(1, $cyan));
+    background: -moz-linear-gradient(top, $blue 5%, $cyan 100%);
+    background: -webkit-linear-gradient(top, $blue 5%, $cyan 100%);
+    background: -o-linear-gradient(top, $blue 5%, $cyan 100%);
+    background: -ms-linear-gradient(top, $blue 5%, $cyan 100%);
+    background: linear-gradient(to bottom, $blue 5%, $cyan 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$blue, endColorstr=$cyan, GradientType=0);
+    // background-color: #5cbf2a;
+    color: white;
+}
+
+.getStartedButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================================================
+                                    Header
+==================================================================================*/
+
+/*========================
+        Section Navigation
+==========================*/
+#navBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+// .logo {
+//     width: 60%;
+// }
+
+.navLogo,
+.navMenu {
+    align-self: center;
+}
+
+.navMenu-itemsList {
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+}
+
+.navMenu-item {
+    padding: 0 6px;
+    // font-size: 0.8rem;
+    // For example, if we want the our font size in a range where 14px is the minimum size at the smallest viewport width of 300px and where 26px is the maximum size at the largest viewport width of 1600px
+    //12.8px minimalna czcionka to jest 0.8rem max 18px
+    font-size: calc(12.8px + (18 - 12.8) * ((100vw - 320px) / (1500 - 320)));
+    color: $white;
+}
+
+
+
+/*================================================================================
+                                    Main
+==================================================================================*/
+.mainFirst,
+.mainSecond,
+.mainThird,
+.mainFourth {
+    background-color: $darkBlue2;
+}
+
+.mainFirst {
+    // display: flex;
+    // flex-flow: column;
+    // align-items: center;
+    // background: url(./images/bg-curvy-desktop.svg) no-repeat;
+    background: url(/images/bg-curvy-mobile.svg) no-repeat;
+    background-size: 100% 50%;
+    // background-size: contain;
+    background-position: center bottom;
+    // padding-bottom: 0rem;
+    background-color: #1b2330;
+}
+
+.mainFirstInfo--p {
+    font-size: .9rem;
+    padding: 1rem 0;
+}
+
+.mainFirstPhoto {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.illustration-intro,
+.illustration-stay-productive {
+
+    width: 100%;
+}
+
+.mainFirstInfo {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+
+// .mainSecond {
+//     background-color: $darkBlue2;
+// }
+
+.contentImg {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contentImg2x {
+    margin: 0 auto;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.contentStayProductive {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contentStayProductiveInfo--h2 {
+    font-size: 1rem;
+}
+
+.fyloWorks-a {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #62e0d9;
+    color: #62e0d9;
+
+}
+
+.iconArrow {
+    position: relative;
+    top: 5.5px;
+    width: 20px;
+}
+
+// .fyloWorks-a::after {
+//     content: url(/images/icon-arrow.svg);
+//     position: relative;
+//     top: 4px;
+// }
+
+// .mainFourth .container {
+//     padding: 3rem 10% 0rem;
+// }
+
+.cards {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards {
+    background: url(/images/bg-quotes.png) no-repeat;
+    background-position: top left 0.1rem;
+    padding: 2rem 0 0rem 0;
+}
+
+.card {
+    background-color: $darkBlue4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1500 - 320)));
+    margin-bottom: 2rem;
+
+}
+
+.card-p {
+    line-height: 1.8;
+}
+
+.card-profile {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.image-profile {
+    border-radius: 50%;
+    // height: 1.5rem;
+    height: calc(24px + (26 -24) * ((100vw - 320px) / (1500 - 320)));
+}
+
+.card-profile-name {
+    padding-left: .5rem;
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1500 - 320)));
+}
+
+.card-profile-name--h3,
+.card-profile-name--p {
+    margin: 0;
+}
+
+
+/*================================================================================
+                                    Main Fifth
+==================================================================================*/
+
+// .mainFifth .container {
+//     padding: 0 10%;
+// }
+.mainFifth {
+    margin-top: 5rem;
+    margin-bottom: -13rem;
+}
+
+.earlyAccess {
+    background: $darkBlue4;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1500 - 320)));
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    // top: 170px;
+    // padding-bottom: 10px;
+}
+
+.earlyAccessForm {
+    display: flex;
+    flex-flow: column nowrap;
+    // white-space: nowrap;
+}
+
+.inputEmail {
+    padding-left: 2rem;
+    margin: 5% 0;
+}
+
+.inputEmail::placeholder {
+    color: grey;
+    opacity: 0.5;
+}
+
+.getStartedForFree {
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1500 - 320)));
+    font-weight: 700;
+}
+
+
+/*================================================================================
+                                    Footer
+==================================================================================*/
+
+
+.footer {
+    background: $darkBlue3;
+    padding-top: 14rem;
+}
+
+.footerContact {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footerLogo {
+    padding-bottom: 2rem;
+}
+
+// .footer .container {
+//     // margin-top: 13rem;
+// }
+// .locationIcon::before {
+//     content: url(/images/icon-phone.svg);
+// }
+.location {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.location-p {
+    margin: 0;
+}
+
+.phoneIcon::before {
+    content: url(/images/icon-phone.svg);
+
+}
+
+.emailIcon::before {
+    content: url(/images/icon-email.svg);
+}
+
+.locationIcon {
+    padding-right: 18px;
+}
+
+.phoneEmailItem,
+.location {
+    padding: 1rem 0;
+}
+
+.phoneIcon::before,
+.emailIcon::before {
+    padding-right: 10px;
+}
+
+.locationIcon,
+.phoneIcon::before,
+.emailIcon::before {
+    position: relative;
+    top: 2px;
+}
+
+.quickContactItemsList {
+    padding: 1rem 0;
+}
+
+.quickContactItem {
+    padding: .5rem 0;
+}
+
+.socialItemsList {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.socialItem {
+    padding: 0 1rem;
+}
+
+.socialItem .fab {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+/*==========================================================================================================================
+                                                    MEDIA QUERIES
+============================================================================================================================*/
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 70%;
+    }
+
+    // .footerLogo {
+    //     max-width: 30%;
+    // }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        max-width: 80%;
+    }
+
+    .illustration-intro {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .mainFirst {
+        // background: url(/images/bg-curvy-desktop.svg) no-repeat;
+        background-size: 100% 70%;
+    }
+
+    .getStartedButton {
+        margin: 0 auto;
+        width: 35%;
+    }
+
+    .mainFirstInfo--h1,
+    .mainFirstInfo--p {
+        margin: 0 auto;
+    }
+
+    .mainFirstInfo--h1 {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .mainFirstInfo--p {
+        font-size: 1rem;
+        width: 80%;
+        padding: 2rem 0;
+    }
+
+    .contentImg {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-bottom: 15%;
+    }
+
+    .contentImg2x {
+        margin: 0 auto;
+        padding-bottom: 0%;
+        padding: 0 1rem;
+    }
+
+    .contentMainImg {
+        height: 50%;
+    }
+
+    .contentStayProductive {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .contentStayProductiveImage {
+        padding: 0 2rem;
+    }
+
+
+    .contentStayProductiveInfo {
+        align-self: center;
+    }
+
+    .cards {
+        max-width: 60%;
+    }
+
+    .earlyAccessForm {
+        width: 70%;
+        align-self: center; //albo marginem
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo {
+        max-width: 100%;
+    }
+
+    .navMenu-item {
+        padding: 0 1rem;
+    }
+
+    .illustration-intro {
+
+        width: 50%;
+    }
+
+    .mainFirst {
+        background: url(/images/bg-curvy-desktop.svg) no-repeat;
+        background-size: 100% 80%;
+        background-position: center bottom;
+
+    }
+
+    .mainFirstInfo--h1 {
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    .mainFirstInfo--p {
+        font-size: 1rem;
+        width: 40%;
+        padding: 2rem 0;
+    }
+
+    .contentImg2xText--h2,
+    .contentStayProductiveInfo--h2 {
+        font-size: 1.5rem;
+    }
+
+    .contentImg2xText--p,
+    .contentStayProductiveInfo--p {
+        font-size: 1rem;
+    }
+
+    .contentImg2xText--p {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contentStayProductiveInfo--p {
+        width: 80%;
+    }
+
+
+    .cards {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        max-width: 100%;
+        background-position: top left 0.5rem;
+    }
+
+    .card {
+        margin: 0 0.5rem;
+    }
+
+    .card-profile-name--h3 {
+        padding-bottom: 5%;
+    }
+
+    .earlyAccess {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .mainFifth {
+        margin-bottom: -14rem;
+    }
+
+    .earlyAccessForm {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .inputEmail {
+        width: 100%;
+        margin-right: 5%;
+    }
+
+    .getStartedForFree {
+        margin: 5% 0;
+        padding: 12px 24px;
+        white-space: nowrap;
+    }
+
+    // .footer .container {
+    //     // margin-top: 14rem;
+    // }
+
+    .footerContact,
+    .quickContact {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .footerContact {
+        justify-content: space-between;
+    }
+
+    .quickContactFirstPart {
+        padding-right: 4rem;
+    }
+
+    .location {
+        width: 30%;
+    }
+
+    .quickContactItemsList,
+    .socialItemsList {
+        padding: .5rem 0;
+    }
+
+
+
+}
