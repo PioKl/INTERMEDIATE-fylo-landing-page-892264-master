@@ -306,7 +306,7 @@ a:hover {
 .image-profile {
     border-radius: 50%;
     // height: 1.5rem;
-    height: calc(24px + (26 -24) * ((100vw - 320px) / (1500 - 320)));
+    height: calc(24px + (26 - 24) * ((100vw - 320px) / (1500 - 320)));
 }
 
 .card-profile-name {
